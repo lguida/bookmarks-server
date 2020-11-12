@@ -21,7 +21,7 @@ const BookmarksService = {
             .first()
     },
     deleteBookmark(knex, id){
-        return knex('saved_bookmarks')
+        return knex('bookmarks')
             .where({ id })
             .delete()
     },
